@@ -1,0 +1,11 @@
+Suggestion for improvement on SQL QUERY
+
+1. Indexes: Ensure that the columns used in the JOIN conditions, WHERE clause, and ORDER BY clause are indexed. This can significantly speed up the query execution.
+
+2. Reduce the number of LEFT JOINs: If certain joins are not necessary for the result set, consider removing them. Each join adds complexity and can slow down the query.
+
+3. Limit the number of selected columns: Only select the columns that are necessary for your application. This reduces the amount of data processed and transferred.
+
+4. Pagination : Breaking query into smaller chunk using OFFSET and LIMIT to reduce number of records per request
+
+5. Analyze the execution plan: Use the database's execution plan feature to identify bottlenecks in the query. (using EXPLAIN)
